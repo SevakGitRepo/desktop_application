@@ -72,6 +72,9 @@ public class FrameClass {
         clear.addActionListener(e -> {
             start.setEnabled(true);
             service.shutdownNow();
+            hour.setText("00");
+            minute.setText("00");
+            second.setText("00");
         });
         return jPanel;
     }
